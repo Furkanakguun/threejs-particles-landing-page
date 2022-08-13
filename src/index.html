@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Peachgang</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.8.1/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.8.1/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/9.8.1/firebase-performance-compat.js"></script>
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Top Navigation Menu -->
+  <!-- <div class="topnav">
+    <a href="#home" class="active">Logo</a> -->
+  <!-- Navigation links (hidden by default) -->
+  <!-- <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div> -->
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+
+  <div class="ct" id="t1">
+    <div class="ct" id="t2">
+      <div class="ct" id="t3">
+        <div class="ct" id="t4">
+          <div class="ct" id="t5">
+            <!-- <ul id="menu" style="border-right: 3px solid white; padding: 8px;">
+              <a href="#t1">
+                <li class="icon fa fa-bolt" id="uno">Events</li>
+                <h1 class="leftTextMenu " id="uno">Peach</h1>
+              </a>
+              <a href="#">
+                <li class="icon fa fa-keyboard-o" id="dos"></li>
+                <h1 class="leftTextMenu" id="dos">Branding</h1>
+
+              </a>
+              <a href="pages/work.html">
+                <li class="icon fa fa-rocket" id="tres"></li>
+                <h1 class="leftTextMenu" id="tres">Art&Culture</h1>
+              </a>
+              <a href="pages/work.html">
+                <li class="icon fa fa-dribbble" id="cuatro"></li>
+                <h1 class="leftTextMenu" id="cuatro">Work</h1>
+
+              </a>
+              <a href="#t5">
+                <li class="icon fa fa-plus-circle" id="cinco"></li>
+                <h1 class="leftTextMenu" id="cinco">Contact Us</h1>
+              </a>
+            </ul> -->
+            <div id="p1">
+              <div id="magic"></div>
+              <div class="playgroundTop">
+                <div class="topPosition">
+                  <h1 class="special">
+                    <span class="neonText pulsate">Welcome To.</span>
+                  </h1>
+                </div>
+              </div>
+              <div class="playground">
+                <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+                <a href="https://www.peachgangtr.com/">
+                  <div id="btn"><span class="noselect">Let's Begin</span>
+                    <div id="circle"></div>
+                  </div>
+                </a>
+                <div class="bottomPosition">
+                  <h1 class="special">
+                    <a href="pages/work.html">
+                      <!-- <button class="glow-on-hover" type="button">
+                        <div style="font-family: trebuchet ms;"> Let's Begin</div>
+                      </button> -->
+
+                    </a>
+                    <br>
+                    <br>
+                    <span style="font-size: 12px;">2022 by Peach Media.</span>
+                  </h1>
+                </div>
+              </div>
+
+            </div>
+            <!-- <div class="page" id="p2">
+              <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+            </div>
+            <div class="page" id="p3">
+              <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+            </div>
+            <div class="page" id="p4">
+              <section class="icon fa fa-dribbble">
+                <span class="title">Dribbble</span>
+                <p class="hint">
+                  <a href="https://dribbble.com/hrtzt" target="_blank">Im ready to play, <span
+                      class="hint line-trough">invite me </span> find me</a>
+                </p>
+                <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan
+                    Peters</a></p>
+              </section>
+            </div>
+            <div class="page" id="p5">
+              <section class="icon fa fa-plus-circle">
+                <span class="title">More</span>
+                <p class="hint">
+                  <span>You love one page & CSS only stuff? </span><br />
+                  <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page
+                    vertical navigation"</a>
+                </p>
+              </section>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="x-shader/x-vertex" id="vertexshader">
+
+      attribute float size;
+      attribute vec3 customColor;
+      varying vec3 vColor;
+    
+      void main() {
+    
+        vColor = customColor;
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+        gl_PointSize = size * ( 300.0 / -mvPosition.z );
+        gl_Position = projectionMatrix * mvPosition;
+    
+      }
+    
+    </script>
+  <script type="x-shader/x-fragment" id="fragmentshader">
+
+     uniform vec3 color;
+     uniform sampler2D pointTexture;
+    
+     varying vec3 vColor;
+    
+     void main() {
+    
+       gl_FragColor = vec4( color * vColor, 1.0 );
+       gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+    
+     }
+    </script>
+
+</body>
+
+</html>
+
+
+<style>
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto' !important;
+    color: black !important;
+    font-size: 9px;
+    background-color: #000 !important;
+  }
+
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+    -webkit-transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+    -moz-transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+    -o-transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+    color: black;
+    overflow: hidden;
+  }
+
+  .leftTextMenu {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .pulsate {
+    animation: pulsate 1.5s infinite alternate;
+  }
+
+  .neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 145, 0),
+      0 0 82px rgb(255, 123, 0),
+      0 0 92px rgb(255, 136, 0),
+      0 0 102px rgb(255, 153, 0),
+      0 0 151px rgb(255, 153, 0);
+  }
+
+  /* Button */
+  #btn {
+    background: rgb(0, 0, 0);
+    height: 50px;
+    min-width: 150px;
+    border: 0px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    color: #eee;
+    font-size: 18px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #btn #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  #btn:hover {
+    background: transparent;
+  }
+
+  #btn:hover #circle {
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
+
+
+  * {
+    font-family: 'open sans', 'lato', 'helvetica', sans-serif;
+  }
+
+  .page {
+    position: absolute;
+  }
+
+  #p1 {
+    left: 0;
+  }
+
+  #p2,
+  #p3,
+  #p4,
+  #p5 {
+    left: 200%;
+  }
+
+  #p1 {
+    background: black;
+  }
+
+  #p2 {
+    background: black;
+  }
+
+  #p3 {
+    background: black;
+  }
+
+  #p4 {
+    background: black;
+  }
+
+  #p5 {
+    background: black;
+  }
+
+  #t2:target #p2,
+  #t3:target #p3,
+  #t4:target #p4,
+  #t5:target #p5 {
+    transform: translateX(-190%);
+    -webkit-transform: translateX(-190%);
+    -moz-transform: translateX(-190%);
+    -o-transform: translateX(-190%);
+    transition-delay: .4s !important;
+  }
+
+  #t2:target #p1,
+  #t3:target #p1,
+  #t4:target #p1,
+  #t5:target #p1 {
+    background: black;
+  }
+
+  #t2:target #p1 .icon,
+  #t3:target #p1 .icon,
+  #t4:target #p1 .icon,
+  #t5:target #p1 .icon {
+    -webkit-filter: blur(3px);
+  }
+
+  .icon {
+    color: #fff;
+    font-size: 32px;
+    display: block;
+  }
+
+  ul .icon:hover {
+    opacity: 0.5;
+  }
+
+  .page .icon .title {
+    line-height: 2;
+  }
+
+  #t2:target ul .icon,
+  #t3:target ul .icon,
+  #t4:target ul .icon,
+  #t5:target ul .icon {
+    transform: scale(.6);
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -o-transform: scale(.6);
+    transition-delay: .25s;
+  }
+
+  #t2:target #dos,
+  #t3:target #tres,
+  #t4:target #cuatro,
+  #t4:target #cinco {
+    transform: scale(1.2) !important;
+    -webkit-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+  }
+
+  ul {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 280px;
+    width: 10%;
+    padding: 0;
+    text-align: center;
+  }
+
+  #menu .icon {
+    margin: 30px 0;
+    transition: all .5s ease-out !important;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .title,
+  .hint {
+    display: block;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .hint {
+    font-size: 13px;
+  }
+
+  #p4 .hint {
+    display: inherit !important;
+  }
+
+  .hint a {
+    color: yellow;
+    transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+  }
+
+  .hint a:hover {
+    color: #FFF;
+  }
+
+  .line-trough {
+    text-decoration: line-through;
+  }
+
+  .page .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10%;
+    left: 0;
+    width: 270px;
+    height: 170px;
+    margin: auto;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1.3;
+    transform: translateX(360%);
+    -webkit-transform: translateX(360%);
+    -moz-transform: translateX(360%);
+    -o-transform: translateX(360%);
+    transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+    -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+    -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+    -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  }
+
+  .page#p1 .icon {
+    height: 220px;
+  }
+
+  .page#p1 .icon {
+    transform: translateX(10%) !important;
+  }
+
+  #t2:target .page#p2 .icon,
+  #t3:target .page#p3 .icon,
+  #t4:target .page#p4 .icon,
+  #t5:target .page#p5 .icon {
+    transform: translateX(0) !important;
+    -webkit-transform: translateX(0) !important;
+    -moz-transform: translateX(0) !important;
+    -o-transform: translateX(0) !important;
+    transition-delay: 1s;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  @import url("https://use.typekit.net/jmk3xov.css");
+
+  html,
+  body {
+
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto' !important;
+    color: white;
+    font-size: 9px;
+  }
+
+  #magic {
+
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+  }
+
+  .playground {
+
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+
+  .playgroundTop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: monospace;
+  }
+
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #91380f, #00ffd5, #2c0723, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .glow-on-hover:active {
+    color: #000
+  }
+
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 400% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .bottomPosition {
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+
+  .topPosition {
+    text-align: center;
+    margin-top: 100px;
+
+  }
+
+  .minText {
+    font-size: 17px;
+  }
+
+  a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+  :root {
+    --dark-bg: rgba(15, 15, 15, 0.95);
+    --spacing: 350px;
+
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  main {
+    width: 100vw;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  h1,
+  h2,
+  h3,
+  blockquote {
+    font-family: elevon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+</style>
+
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.127.0/build/three.module.js"
+    }
+  }
+</script>
+
+
+<script type="module">
+  import * as THREE from 'three';
+
+  const preload = () => {
+
+    let manager = new THREE.LoadingManager();
+    manager.onLoad = function () {
+      const environment = new Environment(typo, particle);
+    }
+
+    var typo = null;
+    const loader = new THREE.FontLoader(manager);
+    const font = loader.load('https://res.cloudinary.com/dydre7amr/raw/upload/v1612950355/font_zsd4dr.json', function (font) { typo = font; });
+    // const particle = new THREE.TextureLoader(manager).load('https://res.cloudinary.com/dfvtkoboz/image/upload/v1605013866/particle_a64uzf.png');
+    const particle = new THREE.TextureLoader(manager).load('https://firebasestorage.googleapis.com/v0/b/peach-gang.appspot.com/o/peach.png?alt=media&token=8090cb5c-8347-4145-8821-c868e0a1e04b');
+
+  }
+
+  if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll))
+    preload();
+  else
+    document.addEventListener("DOMContentLoaded", preload);
+
+  class Environment {
+
+    constructor(font, particle) {
+
+      this.font = font;
+      this.particle = particle;
+      this.container = document.querySelector('#magic');
+      this.scene = new THREE.Scene();
+      this.createCamera();
+      this.createRenderer();
+      this.setup()
+      this.bindEvents();
+    }
+
+    bindEvents() {
+
+      window.addEventListener('resize', this.onWindowResize.bind(this));
+
+    }
+
+    setup() {
+
+      this.createParticles = new CreateParticles(this.scene, this.font, this.particle, this.camera, this.renderer);
+    }
+
+    render() {
+
+      this.createParticles.render()
+      this.renderer.render(this.scene, this.camera)
+    }
+
+    createCamera() {
+
+      this.camera = new THREE.PerspectiveCamera(65, this.container.clientWidth / this.container.clientHeight, 1, 10000);
+      this.camera.position.set(0, 0, 100);
+
+    }
+
+    createRenderer() {
+
+      this.renderer = new THREE.WebGLRenderer();
+      this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+
+      this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      this.renderer.outputEncoding = THREE.sRGBEncoding;
+      this.container.appendChild(this.renderer.domElement);
+
+      this.renderer.setAnimationLoop(() => { this.render() })
+
+    }
+
+    onWindowResize() {
+
+      this.camera.aspect = this.container.clientWidth / this.container.clientHeight;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+
+    }
+  }
+
+  class CreateParticles {
+
+    constructor(scene, font, particleImg, camera, renderer) {
+
+      this.scene = scene;
+      this.font = font;
+      this.particleImg = particleImg;
+      this.camera = camera;
+      this.renderer = renderer;
+
+      this.raycaster = new THREE.Raycaster();
+      this.mouse = new THREE.Vector2(-200, 200);
+
+      this.colorChange = new THREE.Color();
+
+      this.buttom = false;
+
+      this.data = {
+
+        text: 'PEACH\nGANG',
+        amount: 100,
+        particleSize: 4,
+        particleColor: 0xffffff,
+        textSize: 16,
+        area: 250,
+        ease: .05,
+      }
+
+      this.setup();
+      this.bindEvents();
+
+    }
+
+
+    setup() {
+
+      const geometry = new THREE.PlaneGeometry(this.visibleWidthAtZDepth(100, this.camera), this.visibleHeightAtZDepth(100, this.camera));
+      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true });
+      this.planeArea = new THREE.Mesh(geometry, material);
+      this.planeArea.visible = false;
+      this.createText();
+
+    }
+
+    bindEvents() {
+
+      document.addEventListener('mousedown', this.onMouseDown.bind(this));
+      document.addEventListener('mousemove', this.onMouseMove.bind(this));
+      document.addEventListener('mouseup', this.onMouseUp.bind(this));
+
+    }
+
+    onMouseDown() {
+
+      this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      this.mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+
+      const vector = new THREE.Vector3(this.mouse.x, this.mouse.y, 0.5);
+      vector.unproject(this.camera);
+      const dir = vector.sub(this.camera.position).normalize();
+      const distance = - this.camera.position.z / dir.z;
+      this.currenPosition = this.camera.position.clone().add(dir.multiplyScalar(distance));
+
+      const pos = this.particles.geometry.attributes.position;
+      this.buttom = true;
+      this.data.ease = .01;
+
+    }
+
+    onMouseUp() {
+
+      this.buttom = false;
+      this.data.ease = .05;
+    }
+
+    onMouseMove() {
+
+      this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      this.mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+
+    }
+
+    render(level) {
+
+      const time = ((.001 * performance.now()) % 12) / 12;
+      const zigzagTime = (1 + (Math.sin(time * 2 * Math.PI))) / 6;
+
+      this.raycaster.setFromCamera(this.mouse, this.camera);
+
+      const intersects = this.raycaster.intersectObject(this.planeArea);
+
+      if (intersects.length > 0) {
+
+        const pos = this.particles.geometry.attributes.position;
+        const copy = this.geometryCopy.attributes.position;
+        const coulors = this.particles.geometry.attributes.customColor;
+        const size = this.particles.geometry.attributes.size;
+
+        const mx = intersects[0].point.x;
+        const my = intersects[0].point.y;
+        const mz = intersects[0].point.z;
+
+        for (var i = 0, l = pos.count; i < l; i++) {
+
+          const initX = copy.getX(i);
+          const initY = copy.getY(i);
+          const initZ = copy.getZ(i);
+
+          let px = pos.getX(i);
+          let py = pos.getY(i);
+          let pz = pos.getZ(i);
+
+          this.colorChange.setHSL(.5, 1, 1)
+          coulors.setXYZ(i, this.colorChange.r, this.colorChange.g, this.colorChange.b)
+          coulors.needsUpdate = true;
+
+          size.array[i] = this.data.particleSize;
+          size.needsUpdate = true;
+
+          let dx = mx - px;
+          let dy = my - py;
+          const dz = mz - pz;
+
+          const mouseDistance = this.distance(mx, my, px, py)
+          let d = (dx = mx - px) * dx + (dy = my - py) * dy;
+          const f = - this.data.area / d;
+
+          if (this.buttom) {
+
+            const t = Math.atan2(dy, dx);
+            px -= f * Math.cos(t);
+            py -= f * Math.sin(t);
+
+            this.colorChange.setHSL(.5 + zigzagTime, 1.0, .5)
+            coulors.setXYZ(i, this.colorChange.r, this.colorChange.g, this.colorChange.b)
+            coulors.needsUpdate = true;
+
+            if ((px > (initX + 70)) || (px < (initX - 70)) || (py > (initY + 70) || (py < (initY - 70)))) {
+
+              this.colorChange.setHSL(.15, 1.0, .5)
+              coulors.setXYZ(i, this.colorChange.r, this.colorChange.g, this.colorChange.b)
+              coulors.needsUpdate = true;
+
+            }
+
+          } else {
+
+            if (mouseDistance < this.data.area) {
+
+              if (i % 5 == 0) {
+
+                const t = Math.atan2(dy, dx);
+                px -= .03 * Math.cos(t);
+                py -= .03 * Math.sin(t);
+
+                this.colorChange.setHSL(.15, 1.0, .5)
+                coulors.setXYZ(i, this.colorChange.r, this.colorChange.g, this.colorChange.b)
+                coulors.needsUpdate = true;
+
+                size.array[i] = this.data.particleSize / 1.2;
+                size.needsUpdate = true;
+
+              } else {
+
+                const t = Math.atan2(dy, dx);
+                px += f * Math.cos(t);
+                py += f * Math.sin(t);
+
+                pos.setXYZ(i, px, py, pz);
+                pos.needsUpdate = true;
+
+                size.array[i] = this.data.particleSize * 1.3;
+                size.needsUpdate = true;
+              }
+
+              if ((px > (initX + 10)) || (px < (initX - 10)) || (py > (initY + 10) || (py < (initY - 10)))) {
+
+                this.colorChange.setHSL(.15, 1.0, .5)
+                coulors.setXYZ(i, this.colorChange.r, this.colorChange.g, this.colorChange.b)
+                coulors.needsUpdate = true;
+
+                size.array[i] = this.data.particleSize / 1.8;
+                size.needsUpdate = true;
+
+              }
+            }
+
+          }
+
+          px += (initX - px) * this.data.ease;
+          py += (initY - py) * this.data.ease;
+          pz += (initZ - pz) * this.data.ease;
+
+          pos.setXYZ(i, px, py, pz);
+          pos.needsUpdate = true;
+
+        }
+      }
+    }
+
+    createText() {
+
+      let thePoints = [];
+
+      let shapes = this.font.generateShapes(this.data.text, this.data.textSize);
+      let geometry = new THREE.ShapeGeometry(shapes);
+      geometry.computeBoundingBox();
+
+      const xMid = - 0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+      const yMid = (geometry.boundingBox.max.y - geometry.boundingBox.min.y) / 2.85;
+
+      geometry.center();
+
+      let holeShapes = [];
+
+      for (let q = 0; q < shapes.length; q++) {
+
+        let shape = shapes[q];
+
+        if (shape.holes && shape.holes.length > 0) {
+
+          for (let j = 0; j < shape.holes.length; j++) {
+
+            let hole = shape.holes[j];
+            holeShapes.push(hole);
+          }
+        }
+
+      }
+      shapes.push.apply(shapes, holeShapes);
+
+      let colors = [];
+      let sizes = [];
+
+      for (let x = 0; x < shapes.length; x++) {
+
+        let shape = shapes[x];
+
+        const amountPoints = (shape.type == 'Path') ? this.data.amount / 2 : this.data.amount;
+
+        let points = shape.getSpacedPoints(amountPoints);
+
+        points.forEach((element, z) => {
+
+          const a = new THREE.Vector3(element.x, element.y, 0);
+          thePoints.push(a);
+          colors.push(this.colorChange.r, this.colorChange.g, this.colorChange.b);
+          sizes.push(1)
+
+        });
+      }
+
+      let geoParticles = new THREE.BufferGeometry().setFromPoints(thePoints);
+      geoParticles.translate(xMid, yMid, 0);
+
+      geoParticles.setAttribute('customColor', new THREE.Float32BufferAttribute(colors, 3));
+      geoParticles.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1));
+
+      const material = new THREE.ShaderMaterial({
+
+        uniforms: {
+          color: { value: new THREE.Color(0xffffff) },
+          pointTexture: { value: this.particleImg }
+        },
+        vertexShader: document.getElementById('vertexshader').textContent,
+        fragmentShader: document.getElementById('fragmentshader').textContent,
+
+        blending: THREE.AdditiveBlending,
+        depthTest: false,
+        transparent: true,
+      });
+
+      this.particles = new THREE.Points(geoParticles, material);
+      this.scene.add(this.particles);
+
+      this.geometryCopy = new THREE.BufferGeometry();
+      this.geometryCopy.copy(this.particles.geometry);
+
+    }
+
+    visibleHeightAtZDepth(depth, camera) {
+
+      const cameraOffset = camera.position.z;
+      if (depth < cameraOffset) depth -= cameraOffset;
+      else depth += cameraOffset;
+
+      const vFOV = camera.fov * Math.PI / 180;
+
+      return 2 * Math.tan(vFOV / 2) * Math.abs(depth);
+    }
+
+    visibleWidthAtZDepth(depth, camera) {
+
+      const height = this.visibleHeightAtZDepth(depth, camera);
+      return height * camera.aspect;
+
+    }
+
+    distance(x1, y1, x2, y2) {
+
+      return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
+    }
+  }
+
+
+</script>
