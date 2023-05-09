@@ -2,7 +2,7 @@
 
 Using ThreeJs library for custom designs 
 
-Live Demo https://peach-gang.firebaseapp.com/
+Live Demo https://peachgang-portfolio.web.app/
 
 
 ![image](https://user-images.githubusercontent.com/45063194/172239739-92ffd96d-8d5e-43a6-b6c4-0557898c0764.png)
